@@ -28,8 +28,8 @@ production stylesheet in assets/built/screen.css
 /* ---------------------------------------------------------- */
 @import "global.css";
 
-body {
-    background: #f4f8fb;
+body{
+    background-color: black ;
 }
 
 .img {
@@ -378,6 +378,20 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-wrap: wrap;
     margin: 0 -20px;
     padding: 40px 0 0 0;
+}
+
+.welcome-div {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 20px 40px;
+    min-height: 300px;
+    background: #fff center center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    transition: all 0.5s ease;  
 }
 
 .post-card {
@@ -1913,3 +1927,34 @@ Usage (In Ghost editor):
         margin-left: 0;
     }
 }
+
+post-template .post-header,
+.page-template .post-header {
+   margin-bottom: 3.4rem;
+}
+body:not(.post-template) .post-title {
+      font-size: 3.6rem;
+  }
+  
+  .post-title a {
+      text-decoration: none;
+  }
+
+  }
+  
+  .post-template .post-title {
+      margin-bottom: 0;
+  }
+
+      }
+  
+      body:not(.post-template) .post-title {
+          font-size: 3.2rem;
+      }
+
+      }
+  
+      body:not(.post-template) .post-title {
+          font-size: 2.5rem;
+      }
+

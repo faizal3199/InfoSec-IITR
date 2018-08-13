@@ -18,7 +18,9 @@
 
 /* Reset
 /* ---------------------------------------------------------- */
-
+body{
+    background-color: black;
+}
 html,
 body,
 div,

@@ -1,9 +1,9 @@
 ---
 layout: page
 current: about
-title: Calender
+title: Calendar
 navigation: true
-logo: 'assets/images/logo.png'
+logo: 'assets/images/ghost.png'
 class: page-template
 subclass: 'post page'
 ---

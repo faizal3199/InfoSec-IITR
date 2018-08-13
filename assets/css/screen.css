@@ -28,8 +28,8 @@ production stylesheet in assets/built/screen.css
 /* ---------------------------------------------------------- */
 @import "global.css";
 
-body{
-    background-color: black ;
+body {
+    background: #f4f8fb;
 }
 
 .img {
@@ -554,7 +554,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-template .site-main,
 .page-template .site-main {
     padding-bottom: 4vw;
-    background: #fff;
+   
 }
 
 .post-full {
@@ -629,7 +629,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     font-family: Georgia, serif;
     font-size: 2.2rem;
     line-height: 1.6em;
-    background: #fff;
+    
 }
 
 @media (max-width: 1170px) {

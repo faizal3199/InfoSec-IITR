@@ -27,15 +27,18 @@ On a weekly basis the club hosts meetings covering trending security topics. Our
 <h1 id="heading">Website</h1>
 </center>
 <br>
-InfoSec IIT-R in collaboration with <b>SdsLabs</b> maintain it's own CTF website <a href="https://backdoor.sdslabs.co">https://backdoor.sdslabs.co/</a>.We organize Backdoor CTF every year and top teams from all over the world participate in it.We also have a beginner's section and lot of cool challenges in the practice arena. 
+InfoSec IIT-R in collaboration with <b>SdsLabs</b> maintain it's own CTF website <a href="https://backdoor.sdslabs.co" style="color: orange">https://backdoor.sdslabs.co/</a>.We organize Backdoor CTF every year and top teams from all over the world participate in it.We also have a beginner's section and lot of cool challenges in the practice arena.
 </div>
 <style type="text/css">
-	*{
+	div{
 		color:green;
-		background-color: black;
+		font-family: cursive;
+		
 	}
 	#heading{
 		color: green;
+		font-family: Helvetica;
 	}
+
 </style>
 

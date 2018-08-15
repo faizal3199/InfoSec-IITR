@@ -42,6 +42,7 @@ permalink: /:title
 
 # gems and other configs
 plugins_dir: [jekyll-paginate, jekyll-feed]
+gems: [jekyll-paginate]
 
 feed:
   path: feed.xml
@@ -91,5 +92,3 @@ exclude:
   - changelog.md
   - "*.Rmd"
   - .git*
-
-gems: [jekyll-paginate]

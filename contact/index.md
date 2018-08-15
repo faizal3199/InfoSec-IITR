@@ -22,14 +22,19 @@ Free feel to ask for any kind of help and query.Have suggestions? Want to contri
 
 </p>
 <style type="text/css">
-
+@font-face{
+      	font-family:fontis;
+    src: url("../fonts/UbuntuMono-R.ttf");
+      }
 #heading{
-		color: green;
+		color: #d2d2d2;
 		font-family: Helvetica;
 	}
 #contact{
-	font-family: cursive;
-	color:green;
+	font-family: fontis;
+	color:#d2d2d2;
+	line-height: 25px;
+	font-size: 19px;
 }	
 
 

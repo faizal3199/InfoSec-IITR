@@ -9,6 +9,7 @@ subclass: 'post page'
 <div id="content">
 <center>
 <h1 id="heading">About</h1>
+
 </center>
 <br>
 InfoSec IIT-R is the information security club of <b>Indian Institute Of technology Roorkee</b>.It was founded by and for the 

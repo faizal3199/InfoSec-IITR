@@ -413,7 +413,7 @@ blockquote cite a {
 }
 
 a {
-    color: color(var(--blue) l(-5%));
+    color:#d2d2d2;
     text-decoration: none;
 }
 

@@ -6,7 +6,7 @@ language: 'en-uk'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 url: "http://aniket21mathur.github.io/InfoSec-IITR"
-baseurl:"/InfoSec-IITR"
+baseurl: "/InfoSec-IITR"
 
 # Website info
 title: InfosecIITR

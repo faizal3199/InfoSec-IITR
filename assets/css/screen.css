@@ -380,20 +380,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 40px 0 0 0;
 }
 
-.welcome-div {
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin: 0 20px 40px;
-    min-height: 300px;
-    background: #fff center center;
-    background-size: cover;
-    border-radius: 5px;
-    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
-    transition: all 0.5s ease;  
-}
-
 .post-card {
     flex: 1 1 300px;
     display: flex;
@@ -554,7 +540,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-template .site-main,
 .page-template .site-main {
     padding-bottom: 4vw;
-   
+    background: #fff;
 }
 
 .post-full {
@@ -629,7 +615,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     font-family: Georgia, serif;
     font-size: 2.2rem;
     line-height: 1.6em;
-    
+    background: #fff;
 }
 
 @media (max-width: 1170px) {
@@ -1927,34 +1913,3 @@ Usage (In Ghost editor):
         margin-left: 0;
     }
 }
-
-post-template .post-header,
-.page-template .post-header {
-   margin-bottom: 3.4rem;
-}
-body:not(.post-template) .post-title {
-      font-size: 3.6rem;
-  }
-  
-  .post-title a {
-      text-decoration: none;
-  }
-
-  }
-  
-  .post-template .post-title {
-      margin-bottom: 0;
-  }
-
-      }
-  
-      body:not(.post-template) .post-title {
-          font-size: 3.2rem;
-      }
-
-      }
-  
-      body:not(.post-template) .post-title {
-          font-size: 2.5rem;
-      }
-

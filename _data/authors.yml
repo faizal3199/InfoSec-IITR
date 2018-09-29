@@ -7,6 +7,7 @@ ghost:
   picture: assets/images/ghost.png
   facebook: ghost
   twitter: tryghost
+  alias: test_alias
   cover: False
 hannah:
   username: hannah

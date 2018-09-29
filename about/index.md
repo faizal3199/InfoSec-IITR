@@ -2,17 +2,28 @@
 layout: page
 current: about
 navigation: true
-logo: 'assets/images/ghost.png'
+title: About
+logo: 'assets/images/small-logo.jpg'
 class: page-template
 subclass: 'post page'
 ---
-<div id="content">
-<center>
-<h1 id="heading">About</h1>
 
-</center>
+### Who We Are?
+
+InfoSecIITR is a group of information security enthusiasts from Indian Institute of Technology Roorkee (IITR). It is an open group that is run entirely by students, and consists only of IITR students and alumni. We are a bunch of self motivated security entusiasts who love learning and sharing their knowledge with everyone genuinely interested in information security.
+
+### What We Do?
+
+* Meetings: We have weekly meetups where we have information security related discussions and participate in CTFs. Everyone is invited to our meetings. The schedule can be found here. 
+
+* Capture The Flag: We actively participate in CTFs. These are security competitions which require practical knowledge of topics like binary exploitation, reverse engineering, cryptography, web security, forensics, steganography etc. We also organize our own Capture The Flag competitions on Backdoor in collaboration with SDSLabs. The notable ones being: BackdoorCTF (our annual flagship CTF), ScytheCTF, n00bCTF (a high-school level CTF for getting started).
+
+### How to Join?
+InfoSecIITR is an open group. Everyone (from IITR) can join in our meetings and participate with us in CTFs (subject to rules on team size in CTFs, of course). If you come regularly to the meetings, you get added to the internal Slack team.
+
+<!-- <div id="content">
 <br>
-InfoSec IIT-R is the information security club of <b>Indian Institute Of technology Roorkee</b>.It was founded by and for the 
+InfoSec IIT-R is the information security club of <b>Indian Institute Of technology Roorkee</b>. It was founded by and for the 
 students interested in learning about and exploring the cryptic world of information security.
 On roots level we are a group of self motivated security entusiasts who love sharing their knowledge and experience with everyone genuinely interested in playing with security.
 
@@ -29,22 +40,4 @@ On a weekly basis the club hosts meetings covering trending security topics. Our
 </center>
 <br>
 InfoSec IIT-R in collaboration with <b>SdsLabs</b> maintain it's own CTF website <a href="https://backdoor.sdslabs.co" style="color: orange">https://backdoor.sdslabs.co/</a>.We organize Backdoor CTF every year and top teams from all over the world participate in it.We also have a beginner's section and lot of cool challenges in the practice arena.
-</div>
-<style type="text/css">
-	@font-face{
-      	font-family:fontis;
-    src: url("../fonts/UbuntuMono-R.ttf");
-      }
-	#content{
-		color:#d2d2d2	;
-		font-family: fontis;
-		font-size: 19px;
-		line-height: 25px;
-	}
-	#heading{
-		color:#d2d2d2;
-		font-family: Helvetica;
-	}
-
-</style>
-
+</div> -->

@@ -1,41 +1,17 @@
 ---
 layout: page
-current: about
+current: contact
 navigation: true
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/small-logo.jpg'
+title: Contact Us
 class: page-template
 subclass: 'post page'
 ---
-<center>
-<h1 id="heading">Contact Us</h1>
-</center>
-<br>
-<p id="contact">
-Getting in Touch
-We'd love to contact you, send us an email!
-<br>
-Email: infoseciitr@gmail.com
-<br>
-You can contact us through <b>Facebook</b> and <b>Twitter</b> as well.Two small flags in the upper right corner!
-<br>
-Free feel to ask for any kind of help and query.Have suggestions? Want to contribute to the resources? message us. 
-
-</p>
-<style type="text/css">
-@font-face{
-      	font-family:fontis;
-    src: url("../fonts/UbuntuMono-R.ttf");
-      }
-#heading{
-		color: #d2d2d2;
-		font-family: Helvetica;
-	}
-#contact{
-	font-family: fontis;
-	color:#d2d2d2;
-	line-height: 25px;
-	font-size: 19px;
-}	
 
 
-</style>
+Getting in Touch We'd love to contact you, send us an email! 
+Email: [infoseciitr@gmail.com](mailto:infoseciitr@gmail.com)
+
+You can contact us through [Facebook](https://www.facebook.com/{{site.facebook}}) and [Twitter](https://twitter.com/{{site.twitter}}) as well.
+
+Free feel to ask for any kind of help and query.Have suggestions? Want to contribute to the resources? Message us.

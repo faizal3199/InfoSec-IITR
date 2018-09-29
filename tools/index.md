@@ -1,78 +1,63 @@
 ---
 layout: page
-current: about
+current: tools
 navigation: true
-logo: 'assets/images/ghost.png'
+title: Tools
+logo: 'assets/images/small-logo.jpg'
 class: page-template
 subclass: 'post page'
 ---
-<div>
-<center>
-<h1 id="heading">Suggested Tools</h1>
-</center>
-<br>
-<p id="source">It’s important to establish a solid toolkit for any kind of security work. The list below is what we consider a good foundation for our members to start from, allowing one to build up and customize their tools and workflow as they grow more experienced.</p>
 
+This list is a mirror. Original list mantained [here](https://github.com/InfoSecIITR/tools). Feel free to make a pull request to original list.
 
-<pre id="source">
-<b>Disassemblers & Decompilers</b>
-IDA
-Hopper
-dnSpy
-ILSpy
-Reflector + Reflexi
-Java Decompiler
-Debuggers
-OllyDbg
-WinDbg
-Immunity Debugger
-x64_dbg
-GDB
+## General
 
-<b>Web & Networking</b>
-Google Chrome
-Burp Suite
-Wireshark
-Nmap
-cURL
-File Editors
-Vim
-Notepad++
-Hex Workshop
-HxD
-010 Editor
++ Good Linux machine or VM either via VMware, VirtualBox, or vagrant - would suggest Ubuntu 14.04 LTS
++ Python (both 2.7 and 3)
++ Hex Editor (ghex recommended)
 
-<b>Miscellaneous</b>
-VMware or VirtualBox
-Python 2.7 & pip
-PIN Framework
-Z3 & Z3py
-Cygwin
-PuTTY
-FileZilla
-Virtual Machines
-Ubuntu 12.04 x32 & x64
-Windows XP SP3 x32
-Windows 7 SP1 x64
-Kali Linux
-</pre>
-<p id="source">Hacking is a very involved process and tools are only meant to help make your job easier, not solve your problems. This should be more than enough to get you started but there’s dozens of other tools, extensions, scripts, plugins, along with some custom stuff that we use to complement or extend tools in this list.</p>
+## Binary exploitation/reversing
 
-<style type="text/css">
-	@font-face{
-      	font-family:fontis;
-    src: url("../fonts/UbuntuMono-R.ttf");
-      }
-	#source{
-		color:#d2d2d2	;
-		font-family: fontis;
-		font-size: 19px;
-		line-height: 25px;
-		background-color: black;
-	}
-	#heading{
-		color:#d2d2d2;
-		font-family: Helvetica;
-	}
++ [IDA](https://www.hex-rays.com/products/ida/index.shtml) (Demo, if not Pro)
++ [gdb](https://www.gnu.org/software/gdb/)
++ [PEDA](https://github.com/longld/peda) - makes gdb far more usable
++ [qira](http://qira.me/) - if you can get it to work & understand it
++ [checksec](https://github.com/slimm609/checksec.sh) - peda can give the same info though
++ [pwntools](https://pwntools.readthedocs.io/en/stable/) - makes pwning easier
++ [radare2](https://github.com/radare/radare2) - reverse engineering framework
++ [angr](https://github.com/angr/angr) - a binary analysis framework with a great symbolic execution engine
++ [fupy](https://github.com/gdelugre/fupy) - fast and dirty python decompiler
++ [JD-GUI](https://github.com/java-decompiler/jd-gui) - java decompiler
++ [Java Decompilers](http://www.javadecompilers.com) - Online decompiler for Java and Android APKs
++ [syms2elf](https://github.com/danigargu/syms2elf) - A plugin for Hex-Ray's IDA Pro and radare2 to export the symbols recognized to the ELF symbol table 
 
-</style>
+## Cryptography
+
++ [Rumkin ciphers](http://rumkin.com/tools/cipher/) - multiple (ancient) crypto stuff
++ [quipqiup](https://quipqiup.com/) - solving cryptograms
++ [xortool](https://github.com/hellman/xortool) - solving multi-byte xor cipher
++ [rsatool](https://github.com/ius/rsatool) - to calculate rsa params
++ [featherduster](https://github.com/nccgroup/featherduster) -  An automated, modular cryptanalysis tool
++ [attackrsa](https://github.com/rk700/attackrsa) -  An all-in-one tool including many common attacks against RSA problems in CTF
++ [RsaCTFtool](https://github.com/sourcekris/RsaCtfTool) - An automated tool to crack public keys of rsa using various standard techniques
++ [Untwister](https://github.com/altf4/untwister) - A seed recovery tool for various PRNGs
+
+## Forensics
++ [Foremost](http://foremost.sourceforge.net/) - recover hidden files
++ [Binwalk](https://github.com/ReFirmLabs/binwalk) - find offsets of files which are concatenated contiguously
++ [Autopsy](https://github.com/sleuthkit/autopsy) - find deleted files from harddisk dumps
++ [Wireshark](https://www.wireshark.org/) - analyze network captures
++ [Stegsolve](http://www.ww.caesum.com/handbook/Stegsolve.jar)
++ [Cloudshark](https://www.cloudshark.org) - Analyze network captures online
++ [John The Ripper](http://www.openwall.com/john/) - password cracking tool
++ [Stegosaurus](https://bitbucket.org/jherron/stegosaurus/src) - tool that allows embedding arbitrary payloads in Python bytecode (pyc or pyo) files
+
+## Web exploitation
++ [GitTools](https://github.com/internetwache/GitTools) - downloads exposed .git repo of vulnearable websites
++ [SQLMap](https://github.com/sqlmapproject/sqlmap) - automated sql injection
++ [Hackbar](https://addons.mozilla.org/en-US/firefox/addon/hackbar/) - indispensible addon for web exploitation in firefox
++ [CookieManager](https://addons.mozilla.org/en-US/firefox/addon/cookies-manager-plus/) - addon for firefox
++ [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) - add on for chrome.
++ [requests](https://github.com/requests/requests) - python library used for sending HTTP requests
++ [Wfuzz](http://www.edge-security.com/wfuzz.php) - to detect directories and pages on the server using common wordlists.
++ [XSS Payloads](https://github.com/nettitude/xss_payloads)

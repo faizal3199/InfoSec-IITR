@@ -10,7 +10,7 @@ fables:
   name: fables
   description: A series of short stories that make you think.
   cover: assets/images/fables.jpg
-blog:
-  name: blog
+getting-started:
+  name: Getting started
   description: False
-  cover: False
+  cover: "assets/images/fables.jpg"

@@ -1,13 +1,55 @@
 ---
-layout: page
+layout: default
 current: tag
+# title: Tag Page
+cover: False
+class: 'tag-template'
 navigation: True
 logo: 'assets/images/small-logo.jpg'
-class: page-template
-subclass: 'post page'
 ---
 
-{% assign post_arr = site.tags[page.tagname] %}
+
+
+<!-- #tag -->
+{% for tag in site.data.tags %}
+    {% if page.tagname == tag[1].name %}
+        {% assign cover = tag[1].cover %}
+        {% assign tag_description = tag[1].description %}
+    {% endif %}
+{% endfor %}
+
+<header class="site-header outer {% if cover or page.cover %}" style="background-image: url({{ site.baseurl }}{% if cover %}{{ cover }}{% else %}{{ page.cover }}{% endif%}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        {% include site-nav.html %}
+        <div class="site-header-content">
+            <h1 class="site-title">{{ page.tagname | capitalizeall }}</h1>
+            <h2 class="site-description">
+                {% if tag_description %}
+                    {{ tag_description }}
+                {% elsif page.tagname %}
+                    A collection of {{ site.tags[page.tagname] | size }} posts
+                {% endif %}
+            </h2>
+        </div>
+    </div>
+</header>
+<!-- tag -->
+
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            <!-- Required for post-card.html -->
+            <!-- takes array os posts as post_arr -->
+            {% assign post_arr = site.tags[page.tagname] %}
+            {% include post-card.html %}
+        </div>
+    </div>
+</main>
+
+
+<!-- {% assign post_arr = site.tags[page.tagname] %}
 
 {% for post in post_arr %}
 {% assign author = site.data.authors[post.author] %}
@@ -48,7 +90,7 @@ subclass: 'post page'
     font-size: 120%;
 }
 </style>
-
+ -->
 <!-- Pagination links -->
 <!-- <div class="row">
     <div class="col-md-2" style="text-align: left">

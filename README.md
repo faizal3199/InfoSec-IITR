@@ -12,7 +12,7 @@ date: YYYY-MM-DD HH:MM:SS
 tags: ['POST-TAG-1','POST-TAG-2']
 class: post-template
 subclass: 'post tag'
-author: ['AUTHOR1','AUTHOR2']
+author: 'AUTHOR-USERNAME'
 ---
 ```
 * Happy bloging

@@ -1,21 +1,13 @@
 template-tag:
   name: Display name here
   description: Tag description
-  cover: False # url to cover if ant image
+  cover: False # url to cover if any image
 
-speeches:
-  name: speeches
-  description: False
-  cover: assets/images/speeches.jpg
-fiction:
-  name: fiction
-  description: False
+reading-material:
+  name: Reading Material
+  description: Posts regarding reading material
   cover: False
-fables:
-  name: fables
-  description: A series of short stories that make you think.
-  cover: assets/images/fables.jpg
-getting-started:
-  name: Getting started
-  description: False
-  cover: "assets/images/fables.jpg"
+beginner:
+  name: Beginner
+  description: Beginner related posts
+  cover: "/assets/images/tags/beginner-cover.jpeg"

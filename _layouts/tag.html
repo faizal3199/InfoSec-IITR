@@ -1,33 +1,25 @@
 ---
 layout: default
 current: tag
-# title: Tag Page
 cover: False
 class: 'tag-template'
 navigation: True
 logo: 'assets/images/small-logo.jpg'
 ---
 
-
-
 <!-- #tag -->
-{% for tag in site.data.tags %}
-    {% if page.tagname == tag[1].name %}
-        {% assign cover = tag[1].cover %}
-        {% assign tag_description = tag[1].description %}
-    {% endif %}
-{% endfor %}
-
-<header class="site-header outer {% if cover or page.cover %}" style="background-image: url({{ site.baseurl }}{% if cover %}{{ cover }}{% else %}{{ page.cover }}{% endif%}) {% else %}no-cover{% endif %}">
+{% assign tag_name = page.tagname | downcase | replace: ' ','-' %}
+{{ site.data.tags[tag_name] }}
+<header class="site-header outer {% if site.data.tags[tag_name].site.data.tags[tag_name].cover or page.cover %}" style="background-image: url({{ site.baseurl }}{% if site.data.tags[tag_name].cover %}{{ site.data.tags[tag_name].cover }}{% else %}{{ page.cover }}{% endif%}) {% else %}no-cover{% endif %}">
     <div class="inner">
         {% include site-nav.html %}
         <div class="site-header-content">
-            <h1 class="site-title">{{ page.tagname | capitalizeall }}</h1>
+            <h1 class="site-title">{{ site.data.tags[tag_name].name | capitalizeall }}</h1>
             <h2 class="site-description">
-                {% if tag_description %}
-                    {{ tag_description }}
+                {% if site.data.tags[tag_name].description %}
+                    {{ site.data.tags[tag_name].description }}
                 {% elsif page.tagname %}
-                    A collection of {{ site.tags[page.tagname] | size }} posts
+                    A collection of {{ site.tags[tag_name] | size }} posts
                 {% endif %}
             </h2>
         </div>

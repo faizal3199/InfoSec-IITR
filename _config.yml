@@ -6,7 +6,7 @@ paginate_path: "/blog/page:num/"
 language: 'en-uk'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-url: "http://faizalhasanwala.co/"
+url: "http://localhost:8080/" #Value gets overwritten at time of deployment by jekyll
 baseurl: "/InfoSec-IITR/"
 
 # Website info

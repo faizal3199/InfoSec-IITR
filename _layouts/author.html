@@ -31,12 +31,12 @@ logo: 'assets/images/ghost.png'
 
 
 
-<header class="site-header outer {% if author.cover or page.cover %}" style="background-image: url({{ site.baseurl }}{% if author.cover %}{{ author.cover }}{% elsif page.cover %}{{ page.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+<header class="site-header outer {% if author.cover or page.cover %}" style="background-image: url({% if author.cover %}{{ author.cover | prepend: site.baseurl | replace: '//','/'}}{% elsif page.cover %}{{ page.cover | prepend: site.baseurl | replace: '//','/'}}{% endif %}) {% else %}no-cover{% endif %}">
     <div class="inner">
         {% include site-nav.html %}
         <div class="site-header-content">
             {% if author.picture %}
-                <img class="author-profile-image" src="{{ site.baseurl }}{{ author.picture }}" alt="{{ page.author }}" />
+                <img class="author-profile-image" src="{{ author.picture | prepend: site.baseurl | replace: '//','/'}}" alt="{{ page.author }}" />
             {% endif %}
             <h1 class="site-title">{{ author.name }}</h1>
             {% if author.bio %}

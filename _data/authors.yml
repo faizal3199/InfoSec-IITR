@@ -17,7 +17,7 @@ InfoSecIITR:
   url_full: https://infoseciitr.github.io
   url: False #example.com
   bio: Team of InfoSecIITR
-  picture: assets/images/authors/infoseciitr.png
+  picture: /assets/images/authors/infoseciitr.png
   facebook: InfoSecIITR
   twitter: infoseciitr
-  cover: #assets/images/authors/infoseciitr-cover.png
+  cover: False #/assets/images/authors/infoseciitr-cover.png
